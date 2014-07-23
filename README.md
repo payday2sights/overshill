@@ -1,6 +1,4 @@
-overshill
+https://payday2sights.github.io/overshill/
 =========
 
-Demo of assault rifle sights in Payday 2
-
-https://payday2sights.github.io/overshill/
+Demonstrates the assault rifle sights in Payday 2
