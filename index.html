@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Payday 2 Sight Comparison</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+       $("li").click(function(){
+        var imgUrl = $(this).data('rel');
+        $("body").css("background","url('img/" + imgUrl + "')").css("background-repeat","none").css("background-size","cover");
+       });
+      });
+
+    </script>
+  </head>
+
+  <body style='background: url("img/Military Red Dot (Overkill).jpg") repeat scroll 0% 0% / cover  transparent;'>
+    <div id="info">
+      <h1>Payday 2 Sight Comparison</h1>
+      <p>Click a sight on the left to load a preview image.</p>
+      <p>Images taken at 1280x720, using a CAR-4 with the Red Dot 1.</p>
+    </div>
+    <div id="container">
+        <div id="switcher">
+        <ul>
+          <li data-rel="Military Red Dot (Overkill).jpg">
+            <div class="button">
+              <span class="icon" id="military_reddot"></span>
+              <span class="text">Military Red Dot</span>
+            </div>
+          </li>
+
+          <li data-rel="Holographic.jpg">
+            <div class="button">
+              <span class="icon" id="holographic"></span>
+              <span class="text">Holographic</span>
+            </div>
+          </li>
+
+          <li data-rel="The Professionals Choice.jpg">
+            <div class="button">
+              <span class="icon" id="professionals_choice"></span>
+              <span class="text">The Professional's Choice</span>
+            </div>
+          </li>
+
+          <li data-rel="Surgeon Sight.jpg">
+            <div class="button">
+              <span class="icon" id="surgeon_sight"></span>
+              <span class="text">Surgeon Sight</span>
+            </div>
+          </li>
+
+          <li data-rel="Acough Optic.jpg">
+            <div class="button">
+              <span class="icon" id="acough_optic"></span>
+              <span class="text">Acough Optic</span>
+            </div>
+          </li>
+
+          <li data-rel="Milspec Scope.jpg">
+            <div class="button">
+              <span class="icon" id="milspec_scope"></span>
+              <span class="text">Milspec Scope</span>
+            </div>
+          </li>
+
+          <li data-rel="See More.jpg">
+            <div class="button">
+              <span class="icon" id="see_more"></span>
+              <span class="text">See More</span>
+            </div>
+          </li>
+
+          <li data-rel="Combat.jpg">
+            <div class="button">
+              <span class="icon" id="combat"></span>
+              <span class="text">Combat</span>
+            </div>
+          </li>
+
+          <li data-rel="Compact Holo.jpg">
+            <div class="button">
+              <span class="icon" id="compact_holo"></span>
+              <span class="text">Compact Holo</span>
+            </div>
+          </li>
+
+          <li data-rel="Speculator.jpg">
+            <div class="button">
+              <span class="icon" id="speculator"></span>
+              <span class="text">Speculator</span>
+            </div>
+          </li>
+
+          <li data-rel="Trigonom.jpg">
+            <div class="button">
+              <span class="icon" id="trigonom"></span>
+              <span class="text">Trigonom</span>
+            </div>
+          </li>
+
+          <li data-rel="Solar.jpg">
+            <div class="button">
+              <span class="icon" id="solar"></span>
+              <span class="text">Solar</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<div id="preload" style="display:none;">
+     <img src="./img/icons/01_b.png" width="1" height="1" alt="Image 01" />
+     <img src="./img/icons/02_b.png" width="1" height="1" alt="Image 02" />
+     <img src="./img/icons/03_b.png" width="1" height="1" alt="Image 03" />
+     <img src="./img/icons/04_b.png" width="1" height="1" alt="Image 04" />
+     <img src="./img/icons/05_b.png" width="1" height="1" alt="Image 05" />
+     <img src="./img/icons/06_b.png" width="1" height="1" alt="Image 06" />
+     <img src="./img/icons/07_b.png" width="1" height="1" alt="Image 07" />
+     <img src="./img/icons/08_b.png" width="1" height="1" alt="Image 08" />
+     <img src="./img/icons/09_b.png" width="1" height="1" alt="Image 09" />
+     <img src="./img/icons/10_b.png" width="1" height="1" alt="Image 10" />
+     <img src="./img/icons/11_b.png" width="1" height="1" alt="Image 11" />
+     <img src="./img/icons/12_b.png" width="1" height="1" alt="Image 12" />
+
+     <img src="./img/Acough Optic.jpg" width="1" height="1" alt="Acough Optic" />
+     <img src="./img/Combat.jpg" width="1" height="1" alt="Combat" />
+     <img src="./img/Compact Holo.jpg" width="1" height="1" alt="Compact Holo" />
+     <img src="./img/Holographic.jpg" width="1" height="1" alt="Holographic" />
+     <img src="./img/Military Red Dot (Overkill).jpg" width="1" height="1" alt="Military Red Dot" />
+     <img src="./img/Milspec Scope.jpg" width="1" height="1" alt="Milspec Scope" />
+     <img src="./img/See More.jpg" width="1" height="1" alt="See More.jpg" />
+     <img src="./img/Solar.jpg" width="1" height="1" alt="Solar" />
+     <img src="./img/Speculator.jpg" width="1" height="1" alt="Speculator" />
+     <img src="./img/Surgeon Sight.jpg" width="1" height="1" alt="Surgeon Sight" />
+     <img src="./img/The Professionals Choice.jpg" width="1" height="1" alt="The Professionals Choice" />
+     <img src="./img/Trigonom.jpg" width="1" height="1" alt="Trigonom" />
+
+</div>
+
+
+</body>
+</html>

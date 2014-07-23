@@ -1,0 +1,269 @@
+html
+{
+  background:black;
+  font-family:sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body
+{
+  margin: 0;
+  background-repeat:no-repeat;
+  background-size:cover;
+  width:100%;
+  height:100%;
+
+}
+
+h1, p
+{
+  color:white;
+}
+
+#info
+{
+  float:right;
+
+  font-size:16px;
+  font-weight:800;
+  text-align:right;
+  text-transform:uppercase;
+  text-shadow:0px 0px 5px black;
+  margin:10px;
+  border-style: solid;
+  border-width: 10px;
+  border-image: url(../img/border.png) 5 stretch;
+  background:rgba(20,20,20,0.5);
+
+}
+
+#switcher
+{
+  border-style: solid;
+  border-width: 10px;
+  border-image: url(../img/border.png) 5 stretch;
+  background:rgba(20,20,20,0.5);
+  max-width:600px;
+  margin-left:10px;
+  margin-top:10px;
+  float:left;
+
+
+}
+
+ul
+{
+  padding-left:0;
+}
+
+li
+{
+   list-style-type: none;
+   max-width:600px;
+   padding:6px;
+
+}
+
+.icon
+{
+  display: inline-block;
+  width:32px;
+  height: 32px;
+}
+
+.button
+{
+  background:transparent;
+  border:none;
+  height:32px;
+  padding-right:10px;
+
+}
+
+li:hover  .text
+{
+  cursor:pointer;
+  color:#3CD2FF;
+  transition: color 0.15s;
+
+}
+
+li:hover
+{
+  cursor:pointer;
+
+  background:rgba(60,210,250,0.12);
+  transition: background 0.15s;
+}
+
+
+
+.text
+{
+  text-transform:uppercase;
+  color:white;
+  font-size:22px;
+  font-weight:800;
+  text-align: center;
+  line-height: 32px;
+  vertical-align:top;
+  transition: color 0.15s;
+
+}
+
+#preview
+{
+  position:absolute;
+  z-index:-1;
+  top:100px;
+  max-width:100%;
+  height:100%;
+}
+
+#military_reddot
+{
+  background:url('../img/icons/01.png') no-repeat center;
+  background-size: contain;
+}
+
+#holographic
+{
+  background:url('../img/icons/02.png') no-repeat center;
+  background-size: contain;
+}
+
+
+#professionals_choice
+{
+  background:url('../img/icons/03.png') no-repeat center;
+  background-size:contain;
+}
+
+#surgeon_sight
+{
+  background:url('../img/icons/04.png') no-repeat center;
+  background-size:contain;
+}
+
+#acough_optic
+{
+  background:url('../img/icons/05.png') no-repeat center;
+  background-size:contain;
+}
+
+#milspec_scope
+{
+  background:url('../img/icons/06.png') no-repeat center;
+  background-size:contain;
+}
+
+#see_more
+{
+  background:url('../img/icons/07.png') no-repeat center;
+  background-size:contain;
+}
+
+#combat
+{
+  background:url('../img/icons/08.png') no-repeat center;
+  background-size:contain;
+}
+
+#compact_holo
+{
+  background:url('../img/icons/09.png') no-repeat center;
+  background-size:contain;
+}
+
+#speculator
+{
+  background:url('../img/icons/10.png') no-repeat center;
+  background-size:contain;
+}
+
+#trigonom
+{
+  background:url('../img/icons/11.png') no-repeat center;
+  background-size:contain;
+}
+
+#solar
+{
+  background:url('../img/icons/12.png') no-repeat center;
+  background-size:contain;
+}
+
+
+li:hover #military_reddot
+{
+  background:url('../img/icons/01_b.png') no-repeat center;
+  background-size: contain;
+}
+
+li:hover #holographic
+{
+  background:url('../img/icons/02_b.png') no-repeat center;
+  background-size: contain;
+}
+
+
+li:hover #professionals_choice
+{
+  background:url('../img/icons/03_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #surgeon_sight
+{
+  background:url('../img/icons/04_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #acough_optic
+{
+  background:url('../img/icons/05_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #milspec_scope
+{
+  background:url('../img/icons/06_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #see_more
+{
+  background:url('../img/icons/07_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #combat
+{
+  background:url('../img/icons/08_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #compact_holo
+{
+  background:url('../img/icons/09_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #speculator
+{
+  background:url('../img/icons/10_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #trigonom
+{
+  background:url('../img/icons/11_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #solar
+{
+  background:url('../img/icons/12_b.png') no-repeat center;
+  background-size:contain;
+}
