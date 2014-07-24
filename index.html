@@ -10,14 +10,31 @@
       $(document).ready(function(){
        $("li").click(function(){
         var imgUrl = $(this).data('rel');
-        $("body").css("background","url('img/screenshot/" + imgUrl + "')").css("background-repeat","none").css("background-size","cover");
+        $("body")
+          .css(
+          "background","url('img/screenshot/" + imgUrl + "')"
+              )
+          .css(
+            "background-repeat","no-repeat"
+              )
+          .css(
+            "background-size","cover"
+              )
+          .css(
+            "background-position","center bottom"
+              )
+            ;
        });
       });
 
     </script>
   </head>
 
-  <body style='background: url("img/screenshot/Military Red Dot.jpg") repeat scroll 0% 0% / cover  transparent;'>
+  <body style=' background: url("img/screenshot/Military Red Dot.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center bottom;'
+                >
     <div id="container">
       <div id="info">
         <h1>Payday 2 Sight Comparison</h1>
