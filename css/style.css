@@ -123,147 +123,173 @@ li:hover
 
 #military_reddot
 {
-  background:url('../img/icons/01.png') no-repeat center;
+  background:url('../img/icon/01.png') no-repeat center;
   background-size: contain;
 }
 
 #holographic
 {
-  background:url('../img/icons/02.png') no-repeat center;
+  background:url('../img/icon/02.png') no-repeat center;
   background-size: contain;
 }
 
 
 #professionals_choice
 {
-  background:url('../img/icons/03.png') no-repeat center;
+  background:url('../img/icon/03.png') no-repeat center;
   background-size:contain;
 }
 
 #surgeon_sight
 {
-  background:url('../img/icons/04.png') no-repeat center;
+  background:url('../img/icon/04.png') no-repeat center;
   background-size:contain;
 }
 
 #acough_optic
 {
-  background:url('../img/icons/05.png') no-repeat center;
+  background:url('../img/icon/05.png') no-repeat center;
   background-size:contain;
 }
 
 #milspec_scope
 {
-  background:url('../img/icons/06.png') no-repeat center;
+  background:url('../img/icon/06.png') no-repeat center;
   background-size:contain;
 }
 
 #see_more
 {
-  background:url('../img/icons/07.png') no-repeat center;
+  background:url('../img/icon/07.png') no-repeat center;
   background-size:contain;
 }
 
 #combat
 {
-  background:url('../img/icons/08.png') no-repeat center;
+  background:url('../img/icon/08.png') no-repeat center;
   background-size:contain;
 }
 
 #compact_holo
 {
-  background:url('../img/icons/09.png') no-repeat center;
+  background:url('../img/icon/09.png') no-repeat center;
   background-size:contain;
 }
 
 #speculator
 {
-  background:url('../img/icons/10.png') no-repeat center;
+  background:url('../img/icon/10.png') no-repeat center;
   background-size:contain;
 }
 
 #trigonom
 {
-  background:url('../img/icons/11.png') no-repeat center;
+  background:url('../img/icon/11.png') no-repeat center;
   background-size:contain;
 }
 
 #solar
 {
-  background:url('../img/icons/12.png') no-repeat center;
+  background:url('../img/icon/12.png') no-repeat center;
+  background-size:contain;
+}
+
+#pistol
+{
+  background:url('../img/icon/13.png') no-repeat center;
+  background-size:contain;
+}
+
+#sniper
+{
+  background:url('../img/icon/14.png') no-repeat center;
   background-size:contain;
 }
 
 
+
 li:hover #military_reddot
 {
-  background:url('../img/icons/01_b.png') no-repeat center;
+  background:url('../img/icon/01_b.png') no-repeat center;
   background-size: contain;
 }
 
 li:hover #holographic
 {
-  background:url('../img/icons/02_b.png') no-repeat center;
+  background:url('../img/icon/02_b.png') no-repeat center;
   background-size: contain;
 }
 
 
 li:hover #professionals_choice
 {
-  background:url('../img/icons/03_b.png') no-repeat center;
+  background:url('../img/icon/03_b.png') no-repeat center;
   background-size:contain;
 }
 
 li:hover #surgeon_sight
 {
-  background:url('../img/icons/04_b.png') no-repeat center;
+  background:url('../img/icon/04_b.png') no-repeat center;
   background-size:contain;
 }
 
 li:hover #acough_optic
 {
-  background:url('../img/icons/05_b.png') no-repeat center;
+  background:url('../img/icon/05_b.png') no-repeat center;
   background-size:contain;
 }
 
 li:hover #milspec_scope
 {
-  background:url('../img/icons/06_b.png') no-repeat center;
+  background:url('../img/icon/06_b.png') no-repeat center;
   background-size:contain;
 }
 
 li:hover #see_more
 {
-  background:url('../img/icons/07_b.png') no-repeat center;
+  background:url('../img/icon/07_b.png') no-repeat center;
   background-size:contain;
 }
 
 li:hover #combat
 {
-  background:url('../img/icons/08_b.png') no-repeat center;
+  background:url('../img/icon/08_b.png') no-repeat center;
   background-size:contain;
 }
 
 li:hover #compact_holo
 {
-  background:url('../img/icons/09_b.png') no-repeat center;
+  background:url('../img/icon/09_b.png') no-repeat center;
   background-size:contain;
 }
 
 li:hover #speculator
 {
-  background:url('../img/icons/10_b.png') no-repeat center;
+  background:url('../img/icon/10_b.png') no-repeat center;
   background-size:contain;
 }
 
 li:hover #trigonom
 {
-  background:url('../img/icons/11_b.png') no-repeat center;
+  background:url('../img/icon/11_b.png') no-repeat center;
   background-size:contain;
 }
 
 li:hover #solar
 {
-  background:url('../img/icons/12_b.png') no-repeat center;
+  background:url('../img/icon/12_b.png') no-repeat center;
+  background-size:contain;
+}
+
+
+li:hover #pistol
+{
+  background:url('../img/icon/13_b.png') no-repeat center;
+  background-size:contain;
+}
+
+li:hover #sniper
+{
+  background:url('../img/icon/14_b.png') no-repeat center;
   background-size:contain;
 }
