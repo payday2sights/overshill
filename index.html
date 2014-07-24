@@ -7,37 +7,27 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript">
-      $(document).ready(function(){
-       $("li").click(function(){
-        var imgUrl = $(this).data('rel');
-        $("body")
-          .css(
-          "background","url('img/screenshot/" + imgUrl + "')"
-              )
-          .css(
-            "background-repeat","no-repeat"
-              )
-          .css(
-            "background-size","cover"
-              )
-          .css(
-            "background-position","center bottom"
-              )
-            ;
-       });
-      });
+      $(document).ready(function() {
+        $("#switcher").on('click', 'li', function() {
+          $("#screenshot img").removeClass("opaque");
+
+          var newImage = $(this).index();
+
+          $("#screenshot img").eq(newImage).addClass("opaque");
+
+          $("#switcher li").removeClass("selected");
+          $(this).addClass("selected");
+          });
+        });
+
 
     </script>
   </head>
 
-  <body style=' background: url("img/screenshot/Military Red Dot.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center bottom;'
-                >
+  <body>
     <div id="container">
       <div id="info">
-        <h1>Payday 2 Sight Comparison</h1>
+        <span id="logo"></span>
         <p>Click a sight on the left to load a preview image.</p>
         <p>Images taken at 1280x720, using a CAR-4 with the Red Dot 1.</p>
       </div>
@@ -145,9 +135,24 @@
       </div>
     </div>
 
+<div id="screenshot">
+  <img src="./img/screenshot/Acough Optic.jpg" alt="Acough Optic" class="opaque" />
+  <img src="./img/screenshot/Combat.jpg" alt="Combat" />
+  <img src="./img/screenshot/Compact Holo.jpg" alt="Compact Holo" />
+  <img src="./img/screenshot/Holographic.jpg" alt="Holographic" />
+  <img src="./img/screenshot/Military Red Dot.jpg" alt="Military Red Dot" />
+  <img src="./img/screenshot/Milspec Scope.jpg" alt="Milspec Scope" />
+  <img src="./img/screenshot/See More.jpg" alt="See More.jpg" />
+  <img src="./img/screenshot/Solar.jpg" alt="Solar" />
+  <img src="./img/screenshot/Speculator.jpg" alt="Speculator" />
+  <img src="./img/screenshot/Surgeon Sight.jpg" alt="Surgeon Sight" />
+  <img src="./img/screenshot/The Professionals Choice.jpg" alt="The Professionals Choice" />
+  <img src="./img/screenshot/Trigonom.jpg" alt="Trigonom" />
+  <img src="./img/screenshot/Pistol Red Dot Sight.jpg" alt="Pistol Red Dot Sight" />
+  <img src="./img/screenshot/Theia Magnified Scope.jpg" alt="Theia Magnified Scope" />
+</div>
 
 <div id="preload" style="display:none;">
-
      <img src="./img/icon/01_b.png" width="1" height="1" alt="Image 01" />
      <img src="./img/icon/02_b.png" width="1" height="1" alt="Image 02" />
      <img src="./img/icon/03_b.png" width="1" height="1" alt="Image 03" />
@@ -162,23 +167,6 @@
      <img src="./img/icon/12_b.png" width="1" height="1" alt="Image 12" />
      <img src="./img/icon/13_b.png" width="1" height="1" alt="Image 13" />
      <img src="./img/icon/14_b.png" width="1" height="1" alt="Image 14" />
-
-
-     <img src="./img/screenshot/Acough Optic.jpg" width="1" height="1" alt="Acough Optic" />
-     <img src="./img/screenshot/Combat.jpg" width="1" height="1" alt="Combat" />
-     <img src="./img/screenshot/Compact Holo.jpg" width="1" height="1" alt="Compact Holo" />
-     <img src="./img/screenshot/Holographic.jpg" width="1" height="1" alt="Holographic" />
-     <img src="./img/screenshot/Military Red Dot.jpg" width="1" height="1" alt="Military Red Dot" />
-     <img src="./img/screenshot/Milspec Scope.jpg" width="1" height="1" alt="Milspec Scope" />
-     <img src="./img/screenshot/See More.jpg" width="1" height="1" alt="See More.jpg" />
-     <img src="./img/screenshot/Solar.jpg" width="1" height="1" alt="Solar" />
-     <img src="./img/screenshot/Speculator.jpg" width="1" height="1" alt="Speculator" />
-     <img src="./img/screenshot/Surgeon Sight.jpg" width="1" height="1" alt="Surgeon Sight" />
-     <img src="./img/screenshot/The Professionals Choice.jpg" width="1" height="1" alt="The Professionals Choice" />
-     <img src="./img/screenshot/Trigonom.jpg" width="1" height="1" alt="Trigonom" />
-     <img src="./img/screenshot/Pistol Red Dot Sight.jpg" width="1" height="1" alt="Pistol Red Dot Sight" />
-     <img src="./img/screenshot/Theia Magnified Scope.jpg" width="1" height="1" alt="Theia Magnified Scope" />
-
 </div>
 
 
