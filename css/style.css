@@ -29,12 +29,7 @@ h1, p
   height:80px;
 }
 
-#container
-{
-
-}
-
-#screenshot div
+#screenshots .screenshot
 {
   position:absolute;
   left:0;
@@ -51,195 +46,35 @@ h1, p
   filter: alpha(opacity=0);
 }
 
-#screenshot div.opaque {
+#screenshots .screenshot.opaque {
   opacity:1;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=1);
 }
 
+.screenshot
+{
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+  position:absolute;
+}
 
-#ss_sniper
-{
-  background-image:url('../img/screenshot/Theia Magnified Scope.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_pistol
-{
-  background-image:url('../img/screenshot/Pistol Red Dot Sight.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_solar
-{
-  background-image:url('../img/screenshot/Solar.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_trigonom
-{
-  background-image:url('../img/screenshot/Trigonom.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_speculator
-{
-  background-image:url('../img/screenshot/Speculator.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_compact_holo
-{
-  background-image:url('../img/screenshot/Compact Holo.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_combat
-{
-  background-image:url('../img/screenshot/Combat.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_see_more
-{
-  background-image:url('../img/screenshot/See More.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_milspec_scope
-{
-  background-image:url('../img/screenshot/Milspec Scope.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_acough_optic
-{
-  background-image:url('../img/screenshot/Acough Optic.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_surgeon_sight
-{
-  background-image:url('../img/screenshot/Surgeon Sight.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_professionals_choice
-{
-  background-image:url('../img/screenshot/The Professionals Choice.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_holographic
-{
-  background-image:url('../img/screenshot/Holographic.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-#ss_military_reddot
-{
-  background-image:url('../img/screenshot/Military Red Dot.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
+#ss_sniper{background-image:url('../img/screenshot/Theia Magnified Scope.jpg');}
+#ss_pistol{background-image:url('../img/screenshot/Pistol Red Dot Sight.jpg');}
+#ss_solar{background-image:url('../img/screenshot/Solar.jpg');}
+#ss_trigonom{background-image:url('../img/screenshot/Trigonom.jpg');}
+#ss_speculator{background-image:url('../img/screenshot/Speculator.jpg');}
+#ss_compact_holo{background-image:url('../img/screenshot/Compact Holo.jpg');}
+#ss_combat{background-image:url('../img/screenshot/Combat.jpg');}
+#ss_see_more{background-image:url('../img/screenshot/See More.jpg');}
+#ss_milspec_scope{background-image:url('../img/screenshot/Milspec Scope.jpg');}
+#ss_acough_optic{background-image:url('../img/screenshot/Acough Optic.jpg');}
+#ss_surgeon_sight{background-image:url('../img/screenshot/Surgeon Sight.jpg');}
+#ss_professionals_choice{background-image:url('../img/screenshot/The Professionals Choice.jpg');}
+#ss_holographic{background-image:url('../img/screenshot/Holographic.jpg');}
+#ss_military_reddot{background-image:url('../img/screenshot/Military Red Dot.jpg');}
 
 #info
 {

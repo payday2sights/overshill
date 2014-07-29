@@ -10,9 +10,9 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $("#switcher").on('click', 'li', function() {
-          $("#screenshot div").removeClass("opaque");
+          $("#screenshots .screenshot").removeClass("opaque");
           var newImage = $(this).index();
-          $("#screenshot div").eq(newImage).addClass("opaque");
+          $("#screenshots .screenshot").eq(newImage).addClass("opaque");
           $("#switcher li").removeClass("selected");
           $(this).addClass("selected");
           });
@@ -131,21 +131,21 @@
       </div>
     </div>
 
-<div id="screenshot">
-  <div id="ss_military_reddot" class="opaque"></div>
-  <div id="ss_holographic"></div>
-  <div id="ss_professionals_choice"></div>
-  <div id="ss_surgeon_sight"></div>
-  <div id="ss_acough_optic"></div>
-  <div id="ss_milspec_scope"></div>
-  <div id="ss_see_more"></div>
-  <div id="ss_combat"></div>
-  <div id="ss_compact_holo"></div>
-  <div id="ss_speculator"></div>
-  <div id="ss_trigonom"></div>
-  <div id="ss_solar"></div>
-  <div id="ss_pistol"></div>
-  <div id="ss_sniper"></div>
+<div id="screenshots">
+  <div id="ss_military_reddot" class="screenshot opaque"></div>
+  <div id="ss_holographic" class="screenshot"></div>
+  <div id="ss_professionals_choice" class="screenshot"></div>
+  <div id="ss_surgeon_sight" class="screenshot"></div>
+  <div id="ss_acough_optic" class="screenshot"></div>
+  <div id="ss_milspec_scope" class="screenshot"></div>
+  <div id="ss_see_more" class="screenshot"></div>
+  <div id="ss_combat" class="screenshot"></div>
+  <div id="ss_compact_holo" class="screenshot"></div>
+  <div id="ss_speculator" class="screenshot"></div>
+  <div id="ss_trigonom" class="screenshot"></div>
+  <div id="ss_solar" class="screenshot"></div>
+  <div id="ss_pistol" class="screenshot"></div>
+  <div id="ss_sniper" class="screenshot"></div>
 </div>
 
 <div id="preload" style="display:none;">
