@@ -5,20 +5,18 @@
     <title>Payday 2 Sight Comparison</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link href="./img/favicon.ico" rel="icon">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $("#switcher").on('click', 'li', function() {
-          $("#screenshot img").removeClass("opaque");
+          $("#screenshot div").removeClass("opaque");
           var newImage = $(this).index();
-          $("#screenshot img").eq(newImage).addClass("opaque");
+          $("#screenshot div").eq(newImage).addClass("opaque");
           $("#switcher li").removeClass("selected");
           $(this).addClass("selected");
           });
         });
-
-
     </script>
   </head>
 
@@ -32,98 +30,98 @@
 
       <div id="switcher">
         <ul>
-          <li data-rel="Military Red Dot.jpg" class="selected">
+          <li class="selected">
             <div class="button">
               <span class="icon" id="military_reddot"></span>
               <span class="text">Military Red Dot</span>
             </div>
           </li>
 
-          <li data-rel="Holographic.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="holographic"></span>
               <span class="text">Holographic</span>
             </div>
           </li>
 
-          <li data-rel="The Professionals Choice.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="professionals_choice"></span>
               <span class="text">The Professional's Choice</span>
             </div>
           </li>
 
-          <li data-rel="Surgeon Sight.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="surgeon_sight"></span>
               <span class="text">Surgeon Sight</span>
             </div>
           </li>
 
-          <li data-rel="Acough Optic.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="acough_optic"></span>
               <span class="text">Acough Optic</span>
             </div>
           </li>
 
-          <li data-rel="Milspec Scope.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="milspec_scope"></span>
               <span class="text">Milspec Scope</span>
             </div>
           </li>
 
-          <li data-rel="See More.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="see_more"></span>
               <span class="text">See More</span>
             </div>
           </li>
 
-          <li data-rel="Combat.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="combat"></span>
               <span class="text">Combat</span>
             </div>
           </li>
 
-          <li data-rel="Compact Holo.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="compact_holo"></span>
               <span class="text">Compact Holo</span>
             </div>
           </li>
 
-          <li data-rel="Speculator.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="speculator"></span>
               <span class="text">Speculator</span>
             </div>
           </li>
 
-          <li data-rel="Trigonom.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="trigonom"></span>
               <span class="text">Trigonom</span>
             </div>
           </li>
 
-          <li data-rel="Solar.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="solar"></span>
               <span class="text">Solar</span>
             </div>
           </li>
 
-          <li data-rel="Pistol Red Dot Sight.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="pistol"></span>
               <span class="text">Pistol Red Dot Sight</span>
             </div>
           </li>
 
-          <li data-rel="Theia Magnified Scope.jpg">
+          <li>
             <div class="button">
               <span class="icon" id="sniper"></span>
               <span class="text">Theia Magnified Scope</span>
@@ -134,37 +132,52 @@
     </div>
 
 <div id="screenshot">
-  <img src="./img/screenshot/Military Red Dot.jpg" alt="Military Red Dot" class="opaque"  />
-  <img src="./img/screenshot/Holographic.jpg" alt="Holographic" />
-  <img src="./img/screenshot/The Professionals Choice.jpg" alt="The Professionals Choice" />
-  <img src="./img/screenshot/Surgeon Sight.jpg" alt="Surgeon Sight" />
-  <img src="./img/screenshot/Acough Optic.jpg" alt="Acough Optic" />
-  <img src="./img/screenshot/Milspec Scope.jpg" alt="Milspec Scope" />
-  <img src="./img/screenshot/See More.jpg" alt="See More.jpg" />
-  <img src="./img/screenshot/Combat.jpg" alt="Combat" />
-  <img src="./img/screenshot/Compact Holo.jpg" alt="Compact Holo" />
-  <img src="./img/screenshot/Speculator.jpg" alt="Speculator" />
-  <img src="./img/screenshot/Trigonom.jpg" alt="Trigonom" />
-  <img src="./img/screenshot/Solar.jpg" alt="Solar" />
-  <img src="./img/screenshot/Pistol Red Dot Sight.jpg" alt="Pistol Red Dot Sight" />
-  <img src="./img/screenshot/Theia Magnified Scope.jpg" alt="Theia Magnified Scope" />
+  <div id="ss_military_reddot" class="opaque"></div>
+  <div id="ss_holographic"></div>
+  <div id="ss_professionals_choice"></div>
+  <div id="ss_surgeon_sight"></div>
+  <div id="ss_acough_optic"></div>
+  <div id="ss_milspec_scope"></div>
+  <div id="ss_see_more"></div>
+  <div id="ss_combat"></div>
+  <div id="ss_compact_holo"></div>
+  <div id="ss_speculator"></div>
+  <div id="ss_trigonom"></div>
+  <div id="ss_solar"></div>
+  <div id="ss_pistol"></div>
+  <div id="ss_sniper"></div>
 </div>
 
 <div id="preload" style="display:none;">
-     <img src="./img/icon/01_b.png" width="1" height="1" alt="Image 01" />
-     <img src="./img/icon/02_b.png" width="1" height="1" alt="Image 02" />
-     <img src="./img/icon/03_b.png" width="1" height="1" alt="Image 03" />
-     <img src="./img/icon/04_b.png" width="1" height="1" alt="Image 04" />
-     <img src="./img/icon/05_b.png" width="1" height="1" alt="Image 05" />
-     <img src="./img/icon/06_b.png" width="1" height="1" alt="Image 06" />
-     <img src="./img/icon/07_b.png" width="1" height="1" alt="Image 07" />
-     <img src="./img/icon/08_b.png" width="1" height="1" alt="Image 08" />
-     <img src="./img/icon/09_b.png" width="1" height="1" alt="Image 09" />
-     <img src="./img/icon/10_b.png" width="1" height="1" alt="Image 10" />
-     <img src="./img/icon/11_b.png" width="1" height="1" alt="Image 11" />
-     <img src="./img/icon/12_b.png" width="1" height="1" alt="Image 12" />
-     <img src="./img/icon/13_b.png" width="1" height="1" alt="Image 13" />
-     <img src="./img/icon/14_b.png" width="1" height="1" alt="Image 14" />
+    <img src="./img/screenshot/Military Red Dot.jpg" alt="Military Red Dot" />
+    <img src="./img/screenshot/Holographic.jpg" alt="Holographic" />
+    <img src="./img/screenshot/The Professionals Choice.jpg" alt="The Professionals Choice" />
+    <img src="./img/screenshot/Surgeon Sight.jpg" alt="Surgeon Sight" />
+    <img src="./img/screenshot/Acough Optic.jpg" alt="Acough Optic" />
+    <img src="./img/screenshot/Milspec Scope.jpg" alt="Milspec Scope" />
+    <img src="./img/screenshot/See More.jpg" alt="See More" />
+    <img src="./img/screenshot/Combat.jpg" alt="Combat" />
+    <img src="./img/screenshot/Compact Holo.jpg" alt="Compact Holo" />
+    <img src="./img/screenshot/Speculator.jpg" alt="Speculator" />
+    <img src="./img/screenshot/Trigonom.jpg" alt="Trigonom" />
+    <img src="./img/screenshot/Solar.jpg" alt="Solar" />
+    <img src="./img/screenshot/Pistol Red Dot Sight.jpg" alt="Pistol Red Dot Sight" />
+    <img src="./img/screenshot/Theia Magnified Scope.jpg" alt="Theia Magnified Scope" />
+
+    <img src="./img/icon/01_b.png" width="1" height="1" alt="Image 01" />
+    <img src="./img/icon/02_b.png" width="1" height="1" alt="Image 02" />
+    <img src="./img/icon/03_b.png" width="1" height="1" alt="Image 03" />
+    <img src="./img/icon/04_b.png" width="1" height="1" alt="Image 04" />
+    <img src="./img/icon/05_b.png" width="1" height="1" alt="Image 05" />
+    <img src="./img/icon/06_b.png" width="1" height="1" alt="Image 06" />
+    <img src="./img/icon/07_b.png" width="1" height="1" alt="Image 07" />
+    <img src="./img/icon/08_b.png" width="1" height="1" alt="Image 08" />
+    <img src="./img/icon/09_b.png" width="1" height="1" alt="Image 09" />
+    <img src="./img/icon/10_b.png" width="1" height="1" alt="Image 10" />
+    <img src="./img/icon/11_b.png" width="1" height="1" alt="Image 11" />
+    <img src="./img/icon/12_b.png" width="1" height="1" alt="Image 12" />
+    <img src="./img/icon/13_b.png" width="1" height="1" alt="Image 13" />
+    <img src="./img/icon/14_b.png" width="1" height="1" alt="Image 14" />
 </div>
 
 
