@@ -19,6 +19,7 @@ body
 h1, p
 {
   color:white;
+  text-align:center;
 }
 
 #logo
@@ -58,23 +59,22 @@ h1, p
   background-size:cover;
   background-attachment: fixed;
   background-position: center bottom;
-  position:absolute;
 }
 
-#ss_sniper{background-image:url('../img/screenshot/Theia Magnified Scope.jpg');}
-#ss_pistol{background-image:url('../img/screenshot/Pistol Red Dot Sight.jpg');}
-#ss_solar{background-image:url('../img/screenshot/Solar.jpg');}
-#ss_trigonom{background-image:url('../img/screenshot/Trigonom.jpg');}
-#ss_speculator{background-image:url('../img/screenshot/Speculator.jpg');}
-#ss_compact_holo{background-image:url('../img/screenshot/Compact Holo.jpg');}
-#ss_combat{background-image:url('../img/screenshot/Combat.jpg');}
-#ss_see_more{background-image:url('../img/screenshot/See More.jpg');}
-#ss_milspec_scope{background-image:url('../img/screenshot/Milspec Scope.jpg');}
-#ss_acough_optic{background-image:url('../img/screenshot/Acough Optic.jpg');}
-#ss_surgeon_sight{background-image:url('../img/screenshot/Surgeon Sight.jpg');}
-#ss_professionals_choice{background-image:url('../img/screenshot/The Professionals Choice.jpg');}
-#ss_holographic{background-image:url('../img/screenshot/Holographic.jpg');}
-#ss_military_reddot{background-image:url('../img/screenshot/Military Red Dot.jpg');}
+#ss_sniper{background-image:url('../img/screenshot/14_sniper.jpg');}
+#ss_pistol{background-image:url('../img/screenshot/13_pistol.jpg');}
+#ss_solar{background-image:url('../img/screenshot/12_solar.jpg');}
+#ss_trigonom{background-image:url('../img/screenshot/11_trigonom.jpg');}
+#ss_speculator{background-image:url('../img/screenshot/10_speculator.jpg');}
+#ss_compact_holo{background-image:url('../img/screenshot/09_compact_holo.jpg');}
+#ss_combat{background-image:url('../img/screenshot/08_combat.jpg');}
+#ss_see_more{background-image:url('../img/screenshot/07_see_more.jpg');}
+#ss_milspec_scope{background-image:url('../img/screenshot/06_milspec_scope.jpg');}
+#ss_acough_optic{background-image:url('../img/screenshot/05_acough_optic.jpg');}
+#ss_surgeon_sight{background-image:url('../img/screenshot/04_surgeon_sight.jpg');}
+#ss_professionals_choice{background-image:url('../img/screenshot/03_professionals_choice.jpg');}
+#ss_holographic{background-image:url('../img/screenshot/02_holographic.jpg');}
+#ss_military_reddot{background-image:url('../img/screenshot/01_military_reddot.jpg');}
 
 #info
 {
@@ -120,6 +120,7 @@ li
   display: inline-block;
   width:32px;
   height: 32px;
+  background: url(../img/icon-sprites.png) no-repeat top left;
 }
 
 .button
@@ -155,176 +156,34 @@ li:hover
   line-height: 32px;
   vertical-align:top;
   transition: color 0.15s;
-
 }
 
-#military_reddot
-{
-  background:url('../img/icon/01.png') no-repeat center;
-  background-size: contain;
-}
+#military_reddot{background-position: 0 0; width: 40px; height: 25px;}
+#holographic{background-position: 0 -30px; width: 40px; height: 32px;}
+#professionals_choice{background-position: 0 -67px; width: 40px; height: 38px;}
+#surgeon_sight{background-position: 0 -110px; width: 40px; height: 30px;}
+#acough_optic{background-position: 0 -145px; width: 40px; height: 37px;}
+#milspec_scope{background-position: 0 -187px; width: 40px; height: 39px;}
+#see_more{background-position: 0 -231px; width: 40px; height: 39px;}
+#combat{background-position: 0 -275px; width: 40px; height: 40px;}
+#compact_holo{background-position: 0 -320px; width: 40px; height: 36px;}
+#speculator{background-position: 0 -361px; width: 40px; height: 37px;}
+#trigonom{background-position: 0 -403px; width: 40px; height: 40px;}
+#solar{background-position: 0 -448px; width: 40px; height: 40px;}
+#pistol{background-position: 0 -493px; width: 40px; height: 40px;}
+#sniper{background-position: 0 -538px; width: 40px; height: 40px;}
 
-#holographic
-{
-  background:url('../img/icon/02.png') no-repeat center;
-  background-size: contain;
-}
-
-
-#professionals_choice
-{
-  background:url('../img/icon/03.png') no-repeat center;
-  background-size:contain;
-}
-
-#surgeon_sight
-{
-  background:url('../img/icon/04.png') no-repeat center;
-  background-size:contain;
-}
-
-#acough_optic
-{
-  background:url('../img/icon/05.png') no-repeat center;
-  background-size:contain;
-}
-
-#milspec_scope
-{
-  background:url('../img/icon/06.png') no-repeat center;
-  background-size:contain;
-}
-
-#see_more
-{
-  background:url('../img/icon/07.png') no-repeat center;
-  background-size:contain;
-}
-
-#combat
-{
-  background:url('../img/icon/08.png') no-repeat center;
-  background-size:contain;
-}
-
-#compact_holo
-{
-  background:url('../img/icon/09.png') no-repeat center;
-  background-size:contain;
-}
-
-#speculator
-{
-  background:url('../img/icon/10.png') no-repeat center;
-  background-size:contain;
-}
-
-#trigonom
-{
-  background:url('../img/icon/11.png') no-repeat center;
-  background-size:contain;
-}
-
-#solar
-{
-  background:url('../img/icon/12.png') no-repeat center;
-  background-size:contain;
-}
-
-#pistol
-{
-  background:url('../img/icon/13.png') no-repeat center;
-  background-size:contain;
-}
-
-#sniper
-{
-  background:url('../img/icon/14.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #military_reddot, li.selected #military_reddot
-{
-  background:url('../img/icon/01_b.png') no-repeat center;
-  background-size: contain;
-}
-
-li:hover #holographic, li.selected #holographic
-{
-  background:url('../img/icon/02_b.png') no-repeat center;
-  background-size: contain;
-}
-
-
-li:hover #professionals_choice, li.selected #professionals_choice
-{
-  background:url('../img/icon/03_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #surgeon_sight, li.selected #surgeon_sight
-{
-  background:url('../img/icon/04_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #acough_optic, li.selected #acough_optic
-{
-  background:url('../img/icon/05_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #milspec_scope, li.selected #milspec_scope
-{
-  background:url('../img/icon/06_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #see_more, li.selected #see_more
-{
-  background:url('../img/icon/07_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #combat, li.selected #combat
-{
-  background:url('../img/icon/08_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #compact_holo, li.selected #compact_holo
-{
-  background:url('../img/icon/09_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #speculator, li.selected #speculator
-{
-  background:url('../img/icon/10_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #trigonom, li.selected #trigonom
-{
-  background:url('../img/icon/11_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #solar, li.selected #solar
-{
-  background:url('../img/icon/12_b.png') no-repeat center;
-  background-size:contain;
-}
-
-
-li:hover #pistol, li.selected #pistol
-{
-  background:url('../img/icon/13_b.png') no-repeat center;
-  background-size:contain;
-}
-
-li:hover #sniper, li.selected #sniper
-{
-  background:url('../img/icon/14_b.png') no-repeat center;
-  background-size:contain;
-}
+li:hover #military_reddot, li.selected #military_reddot{background-position: -40px 0; width: 40px; height: 25px;}
+li:hover #holographic, li.selected #holographic{background-position: -40px -30px; width: 40px; height: 32px;}
+li:hover #professionals_choice, li.selected #professionals_choice{background-position: -40px -67px; width: 40px; height: 38px;}
+li:hover #surgeon_sight, li.selected #surgeon_sight{background-position: -40px -110px; width: 40px; height: 30px;}
+li:hover #acough_optic, li.selected #acough_optic{background-position: -40px -145px; width: 40px; height: 37px;}
+li:hover #milspec_scope, li.selected #milspec_scope{background-position: -40px -187px; width: 40px; height: 39px;}
+li:hover #see_more, li.selected #see_more{background-position: -40px -231px; width: 40px; height: 39px;}
+li:hover #combat, li.selected #combat{background-position: -40px -275px; width: 40px; height: 40px;}
+li:hover #compact_holo, li.selected #compact_holo{background-position: -40px -320px; width: 40px; height: 36px;}
+li:hover #speculator, li.selected #speculator{background-position: -40px -361px; width: 40px; height: 37px;}
+li:hover #trigonom, li.selected #trigonom{background-position: -40px -403px; width: 40px; height: 40px;}
+li:hover #solar, li.selected #solar{background-position: -40px -448px; width: 40px; height: 40px;}
+li:hover #pistol, li.selected #pistol{background-position: -40px -493px; width: 40px; height: 40px;}
+li:hover #sniper, li.selected #sniper{background-position: -40px -538px; width: 40px; height: 40px;}
