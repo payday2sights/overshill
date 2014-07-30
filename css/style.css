@@ -30,52 +30,6 @@ h1, p
   height:80px;
 }
 
-#screenshots .screenshot
-{
-  position:absolute;
-  left:0;
-  top:0;
-  z-index:-1;
-  width:100%;
-  height:100%;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  opacity:0;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-}
-
-#screenshots .screenshot.opaque {
-  opacity:1;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=1);
-}
-
-.screenshot
-{
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  background-position: center bottom;
-}
-
-#ss_sniper{background-image:url('../img/screenshot/14_sniper.jpg');}
-#ss_pistol{background-image:url('../img/screenshot/13_pistol.jpg');}
-#ss_solar{background-image:url('../img/screenshot/12_solar.jpg');}
-#ss_trigonom{background-image:url('../img/screenshot/11_trigonom.jpg');}
-#ss_speculator{background-image:url('../img/screenshot/10_speculator.jpg');}
-#ss_compact_holo{background-image:url('../img/screenshot/09_compact_holo.jpg');}
-#ss_combat{background-image:url('../img/screenshot/08_combat.jpg');}
-#ss_see_more{background-image:url('../img/screenshot/07_see_more.jpg');}
-#ss_milspec_scope{background-image:url('../img/screenshot/06_milspec_scope.jpg');}
-#ss_acough_optic{background-image:url('../img/screenshot/05_acough_optic.jpg');}
-#ss_surgeon_sight{background-image:url('../img/screenshot/04_surgeon_sight.jpg');}
-#ss_professionals_choice{background-image:url('../img/screenshot/03_professionals_choice.jpg');}
-#ss_holographic{background-image:url('../img/screenshot/02_holographic.jpg');}
-#ss_military_reddot{background-image:url('../img/screenshot/01_military_reddot.jpg');}
-
 #info
 {
   float:right;
@@ -115,6 +69,20 @@ li
    padding:6px;
 }
 
+li:hover .text, li.selected .text
+{
+  cursor:pointer;
+  color:#3CD2FF;
+  transition: color 0.15s;
+}
+
+li:hover
+{
+  cursor:pointer;
+  background:rgba(60,210,250,0.12);
+  transition: background 0.15s;
+}
+
 .icon
 {
   display: inline-block;
@@ -129,21 +97,6 @@ li
   border:none;
   height:32px;
   padding-right:10px;
-
-}
-
-li:hover .text, li.selected .text
-{
-  cursor:pointer;
-  color:#3CD2FF;
-  transition: color 0.15s;
-}
-
-li:hover
-{
-  cursor:pointer;
-  background:rgba(60,210,250,0.12);
-  transition: background 0.15s;
 }
 
 .text
@@ -192,3 +145,52 @@ li:hover #trigonom, li.selected #trigonom{background-position: -40px -403px; wid
 li:hover #solar, li.selected #solar{background-position: -40px -448px; width: 40px; height: 40px;}
 li:hover #pistol, li.selected #pistol{background-position: -40px -493px; width: 40px; height: 40px;}
 li:hover #sniper, li.selected #sniper{background-position: -40px -538px; width: 40px; height: 40px;}
+
+
+#screenshots .screenshot
+{
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+  width:100%;
+  height:100%;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+#screenshots .screenshot.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+.screenshot
+{
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+
+#ss_sniper{background-image:url('../img/screenshot/14_sniper.jpg');}
+#ss_pistol{background-image:url('../img/screenshot/13_pistol.jpg');}
+#ss_solar{background-image:url('../img/screenshot/12_solar.jpg');}
+#ss_trigonom{background-image:url('../img/screenshot/11_trigonom.jpg');}
+#ss_speculator{background-image:url('../img/screenshot/10_speculator.jpg');}
+#ss_compact_holo{background-image:url('../img/screenshot/09_compact_holo.jpg');}
+#ss_combat{background-image:url('../img/screenshot/08_combat.jpg');}
+#ss_see_more{background-image:url('../img/screenshot/07_see_more.jpg');}
+#ss_milspec_scope{background-image:url('../img/screenshot/06_milspec_scope.jpg');}
+#ss_acough_optic{background-image:url('../img/screenshot/05_acough_optic.jpg');}
+#ss_surgeon_sight{background-image:url('../img/screenshot/04_surgeon_sight.jpg');}
+#ss_professionals_choice{background-image:url('../img/screenshot/03_professionals_choice.jpg');}
+#ss_holographic{background-image:url('../img/screenshot/02_holographic.jpg');}
+#ss_military_reddot{background-image:url('../img/screenshot/01_military_reddot.jpg');}
+
+#preload{display:none;}
