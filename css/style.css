@@ -152,10 +152,15 @@ li:hover
   color:white;
   font-size:22px;
   font-weight:600;
-  text-align: center;
   line-height: 32px;
   vertical-align:top;
   transition: color 0.15s;
+}
+
+.dlc_text
+{
+  color:#fbd100;
+  font-size:14px;
 }
 
 #military_reddot{background-position: 0 0; width: 40px; height: 25px;}
