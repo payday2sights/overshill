@@ -32,10 +32,12 @@ h1, p
 
 #info
 {
-  float:right;
+  position:absolute;
+  bottom:80px;
+  left:60px;
   font-size:16px;
   font-weight:600;
-  text-align:right;
+  text-align:left;
   text-transform:uppercase;
   text-shadow:0px 0px 5px black;
   margin:10px;
@@ -47,14 +49,10 @@ h1, p
 
 #switcher
 {
-  border-style: solid;
-  border-width: 10px;
-  border-image: url(../img/border.png) 5 stretch;
-  background:rgba(20,20,20,0.5);
   max-width:600px;
-  margin-left:10px;
-  margin-top:10px;
-  float:left;
+  margin-right:20px;
+  margin-top:50px;
+  float:right;
 }
 
 ul
@@ -67,19 +65,25 @@ li
    list-style-type: none;
    max-width:600px;
    padding:6px;
+   text-align:right;
 }
 
 li:hover .text, li.selected .text
 {
   cursor:pointer;
-  color:#3CD2FF;
+  color:rgb(95,209,255);
   transition: color 0.15s;
+}
+
+li:not(.selected)
+{
+  opacity:0.8;
 }
 
 li:hover
 {
   cursor:pointer;
-  background:rgba(60,210,250,0.12);
+  background:rgba(95,209,255,0.12);
   transition: background 0.15s;
 }
 
@@ -88,7 +92,7 @@ li:hover
   display: inline-block;
   width:32px;
   height: 32px;
-  background: url(../img/icon-sprites.png) no-repeat top left;
+  background: url(../img/icon-sprites.png) no-repeat center;
 }
 
 .button
@@ -102,18 +106,28 @@ li:hover
 .text
 {
   text-transform:uppercase;
-  color:white;
+  color:rgba(95,209,255,0.9);
   font-size:22px;
   font-weight:600;
   line-height: 32px;
   vertical-align:top;
   transition: color 0.15s;
+  text-shadow:0 0 5px black;
 }
 
 .dlc_text
 {
   color:#fbd100;
-  font-size:14px;
+  font-size:22px;
+}
+
+#dlc_info
+{
+  position:absolute;
+  bottom:5px;
+  right:5px;
+  color:#fbd100;
+  font-size:22px;
 }
 
 #military_reddot{background-position: 0 0; width: 40px; height: 25px;}

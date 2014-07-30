@@ -6,7 +6,8 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link href="./img/favicon.ico" rel="icon">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./font-awesome-4.1.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $("#switcher").on('click', 'li', function() {
@@ -21,9 +22,10 @@
   </head>
 
   <body>
+
       <div id="info">
         <span id="logo"></span>
-        <p>Click a sight on the left to load a preview image.</p>
+        <p>Click a sight on the right to load a preview image.</p>
       </div>
 
       <div id="switcher">
@@ -31,104 +33,106 @@
 
           <li class="selected">
             <div class="button">
-              <span class="icon" id="military_reddot"></span>
               <span class="text">Military Red Dot</span>
+              <span class="icon" id="military_reddot"></span>
             </div>
           </li>
 
           <li>
             <div class="button">
-              <span class="icon" id="holographic"></span>
               <span class="text">Holographic</span>
+              <span class="icon" id="holographic"></span>
             </div>
           </li>
 
           <li>
             <div class="button">
-              <span class="icon" id="professionals_choice"></span>
               <span class="text">The Professional's Choice</span>
+              <span class="icon" id="professionals_choice"></span>
             </div>
           </li>
 
           <li>
             <div class="button">
-              <span class="icon" id="surgeon_sight"></span>
               <span class="text">Surgeon Sight</span>
+              <span class="icon" id="surgeon_sight"></span>
             </div>
           </li>
 
           <li>
             <div class="button">
-              <span class="icon" id="acough_optic"></span>
               <span class="text">Acough Optic</span>
+              <span class="icon" id="acough_optic"></span>
             </div>
           </li>
 
           <li>
             <div class="button">
-              <span class="icon" id="milspec_scope"></span>
               <span class="text">Milspec Scope</span>
+              <span class="icon" id="milspec_scope"></span>
             </div>
           </li>
 
           <li>
             <div class="button">
+              <span class="text"><span class="dlc_text"><i class="fa fa-asterisk"></i></span> See More</span>
               <span class="icon" id="see_more"></span>
-              <span class="text">See More <span class="dlc_text">Armored Transport Item</span></span>
             </div>
           </li>
 
           <li>
             <div class="button">
+              <span class="text"><span class="dlc_text"><i class="fa fa-asterisk"></i></span> Combat</span>
               <span class="icon" id="combat"></span>
-              <span class="text">Combat <span class="dlc_text">Gage Mod Courier Item</span></span>
             </div>
           </li>
 
           <li>
             <div class="button">
+              <span class="text"><span class="dlc_text"><i class="fa fa-asterisk"></i></span> Compact Holo</span>
               <span class="icon" id="compact_holo"></span>
-              <span class="text">Compact Holo <span class="dlc_text">Gage Mod Courier Item</span></span>
             </div>
           </li>
 
           <li>
             <div class="button">
+              <span class="text"><span class="dlc_text"><i class="fa fa-asterisk"></i></span> Speculator</span>
               <span class="icon" id="speculator"></span>
-              <span class="text">Speculator <span class="dlc_text">Gage Mod Courier Item</span></span>
             </div>
           </li>
 
           <li>
             <div class="button">
+              <span class="text"><span class="dlc_text"><i class="fa fa-asterisk"></i></span> Trigonom</span>
               <span class="icon" id="trigonom"></span>
-              <span class="text">Trigonom <span class="dlc_text">Gage Mod Courier Item</span></span>
             </div>
           </li>
 
           <li>
             <div class="button">
+              <span class="text"><span class="dlc_text"><i class="fa fa-asterisk"></i></span> Solar</span>
               <span class="icon" id="solar"></span>
-              <span class="text">Solar <span class="dlc_text">Gage Mod Courier Item</span></span>
             </div>
           </li>
 
           <li>
             <div class="button">
+              <span class="text"><span class="dlc_text"><i class="fa fa-asterisk"></i></span> Pistol Red Dot Sight</span>
               <span class="icon" id="pistol"></span>
-              <span class="text">Pistol Red Dot Sight <span class="dlc_text">Gage Mod Courier Item</span></span>
             </div>
           </li>
 
           <li>
             <div class="button">
+              <span class="text"><span class="dlc_text"><i class="fa fa-asterisk"></i></span> Theia Magnified Scope</span>
               <span class="icon" id="sniper"></span>
-              <span class="text">Theia Magnified Scope <span class="dlc_text">Gage Sniper Pack Item</span></span>
             </div>
           </li>
 
         </ul>
       </div>
+
+<div id="dlc_info"><span class="dlc_text"><i class="fa fa-asterisk"></i></span>DLC ITEMS</div>
 
 <div id="screenshots">
   <div id="ss_military_reddot" class="screenshot opaque"></div>
@@ -163,6 +167,30 @@
     <img src="./img/screenshot/13_pistol.jpg" alt="Pistol Red Dot Sight" />
     <img src="./img/screenshot/14_sniper.jpg" alt="Theia Magnified Scope" />
 </div>
+
+
+<audio id="menu_sound" preload="auto">
+    <source src="./audio/menu.mp3" type='audio/mpeg; codecs="mp3"'></source>
+    <source src="./audio/menu.ogg" type='audio/ogg; codecs="vorbis"'></source>
+    Your browser sucks.
+</audio>
+
+<script>
+  $("ul li")
+  .each(function(i) {
+    if (i != 0) {
+      $("#menu_sound")
+        .clone()
+        .attr("id", "menu_sound-" + i)
+        .appendTo($(this).parent());
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#menu_sound-" + $(this).data("beeper"))[0].play();
+  });
+  $("#menu_sound").attr("id", "menu_sound-0");
+</script>
 
 </body>
 </html>
