@@ -174,7 +174,6 @@
     <source src="./audio/menu.ogg" type='audio/ogg; codecs="vorbis"'></source>
     Your browser sucks.
 </audio>
-
 <script>
   $("ul li")
   .each(function(i) {
@@ -190,6 +189,17 @@
     $("#menu_sound-" + $(this).data("beeper"))[0].play();
   });
   $("#menu_sound").attr("id", "menu_sound-0");
+</script>
+
+<audio id="select_sound" preload="auto">
+    <source src="./audio/select.mp3" type='audio/mpeg; codecs="mp3"'></source>
+    <source src="./audio/select.ogg" type='audio/ogg; codecs="vorbis"'></source>
+    Your browser sucks.
+</audio>
+<script>
+$("li").on("click",function(){
+  $('#select_sound')[0].play();
+});
 </script>
 
 </body>
