@@ -16,10 +16,15 @@ body
 
 }
 
-h1, p
+h1
 {
   color:white;
   text-align:center;
+}
+
+#container
+{
+  display:cell;
 }
 
 #logo
@@ -45,6 +50,8 @@ h1, p
   border-width: 10px;
   border-image: url(../img/border.png) 5 stretch;
   background:rgba(20,20,20,0.5);
+  color:white;
+  text-align:center;
 }
 
 #switcher
@@ -109,11 +116,13 @@ li:hover
   text-transform:uppercase;
   color:rgba(95,209,255,0.9);
   font-size:22px;
-  font-weight:600;
+  font-weight:400;
   line-height: 40px;
   vertical-align:top;
   transition: color 0.15s;
   text-shadow:0 0 5px black;
+  display: inline-block;
+  transform:scaley(1.3);
 }
 
 .dlc_text
@@ -218,3 +227,20 @@ li:hover #sniper, li.selected #sniper{background-position: -40px -538px; width: 
 #ss_military_reddot{background-image:url('../img/screenshot/01_military_reddot.jpg');}
 
 #preload{display:none;}
+
+#loading
+{
+  color:white;
+  font-size:100px;
+  text-align:center;
+  vertical-align:middle;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 15%;
+  margin: auto;
+  z-index:-2;
+}

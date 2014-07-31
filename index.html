@@ -22,7 +22,7 @@
   </head>
 
   <body>
-
+    <div id="container">
       <div id="info">
         <span id="logo"></span>
         <p>Click a sight on the right to load a preview image.</p>
@@ -140,24 +140,30 @@
         </ul>
       </div>
 
-<div id="dlc_info"><i class="fa fa-asterisk"></i>DLC ITEMS</div>
+      <div id="screenshots">
+        <div id="ss_military_reddot" class="screenshot opaque"></div>
+        <div id="ss_holographic" class="screenshot"></div>
+        <div id="ss_professionals_choice" class="screenshot"></div>
+        <div id="ss_surgeon_sight" class="screenshot"></div>
+        <div id="ss_acough_optic" class="screenshot"></div>
+        <div id="ss_milspec_scope" class="screenshot"></div>
+        <div id="ss_see_more" class="screenshot"></div>
+        <div id="ss_combat" class="screenshot"></div>
+        <div id="ss_compact_holo" class="screenshot"></div>
+        <div id="ss_speculator" class="screenshot"></div>
+        <div id="ss_trigonom" class="screenshot"></div>
+        <div id="ss_solar" class="screenshot"></div>
+        <div id="ss_pistol" class="screenshot"></div>
+        <div id="ss_sniper" class="screenshot"></div>
+      </div>
 
-<div id="screenshots">
-  <div id="ss_military_reddot" class="screenshot opaque"></div>
-  <div id="ss_holographic" class="screenshot"></div>
-  <div id="ss_professionals_choice" class="screenshot"></div>
-  <div id="ss_surgeon_sight" class="screenshot"></div>
-  <div id="ss_acough_optic" class="screenshot"></div>
-  <div id="ss_milspec_scope" class="screenshot"></div>
-  <div id="ss_see_more" class="screenshot"></div>
-  <div id="ss_combat" class="screenshot"></div>
-  <div id="ss_compact_holo" class="screenshot"></div>
-  <div id="ss_speculator" class="screenshot"></div>
-  <div id="ss_trigonom" class="screenshot"></div>
-  <div id="ss_solar" class="screenshot"></div>
-  <div id="ss_pistol" class="screenshot"></div>
-  <div id="ss_sniper" class="screenshot"></div>
-</div>
+      <div id="dlc_info"><i class="fa fa-asterisk"></i>DLC ITEMS</div>
+
+      <div id="loading"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+
+    </div>
+
+
 
 <div id="preload">
     <img src="./img/screenshot/01_military_reddot.jpg" alt="Military Red Dot" />
@@ -182,6 +188,7 @@
     <source src="./audio/menu.ogg" type='audio/ogg; codecs="vorbis"' />
     Your browser sucks.
 </audio>
+
 <script type="text/javascript">
   $("ul li")
   .each(function(i) {
@@ -204,6 +211,7 @@
     <source src="./audio/select.ogg" type='audio/ogg; codecs="vorbis"' />
     Your browser sucks.
 </audio>
+
 <script type="text/javascript">
 $("li").on("click",function(){
   $('#select_sound')[0].play();
