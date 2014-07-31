@@ -227,17 +227,3 @@ li:hover #sniper, li.selected #sniper{background-position: -40px -538px; width: 
 #ss_military_reddot{background-image:url('../img/screenshot/01_military_reddot.jpg');}
 
 #preload{display:none;}
-
-#loading
-{
-  color:white;
-  font-size:100px;
-  text-align:center;
-  vertical-align:middle;
-  position: absolute;
-  top: 0;  bottom: 0;  left: 0;  right: 0;
-  width: 50%;
-  height: 15%;
-  margin: auto;
-  z-index:-2;
-}
